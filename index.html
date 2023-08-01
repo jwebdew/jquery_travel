@@ -412,30 +412,7 @@
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            // let section = $('.theme_tour');
-            // let point = $('.tab_menu li.on');
-            // let tabMenu = $('.tab_menu li');
-            // let tabs = $('.tab_menu li.on::before').css('background-color', '#ffffff');
-            //let tabColor = ['#ff0022', '#ff9102', 'd9ff00', '#ffcc00'];
-
-
-
-
-
-            // i++
-            // if(i == tabColor.length) {
-            //     i = 0;
-            // }
-            // $(this).eq(i).addClass('on').css('background-color', tabColor[i] );
-            // console.log(tabMenu.length)
-            // for (let i = 0; i < tabMenu.length; i++) {
-            //     let num = i + 1;
-            //     let imgChange =  this.css('background', 'url(img/thema_bg' + num + '.jpg)');
-
-
-
-
-            // } //for 
+             
 
             let i = 0;
             let numberTab = $(this).index();
@@ -443,23 +420,12 @@
             let sectionColor = ['#ff0022', '#ff9102', 'd9ff00', '#ffcc00'];
             //let sectionBg = sectionColor[i]
             $('.tab_menu li').click(function () {
-                // i++;
-                // console.log(sectionNum.length)
-                // if(i <= sectionNum.length) {
+                
 
-                //     $('.theme_tour').css('background-color', sectionBg);
-                //     i = 0;
-                // } else{
-                //     $('.theme_tour').css('background-color', '#ffffff');
-                // }
-                // console.log(i)
-
-
-
-                //hasClass()
+ 
                 $('.tab_menu li').removeClass('on');
                 $(this).addClass('on');
-                //$('.tab_menu li').hasClass('on').css({'background-color' : pointColorList[i]});
+                
 
                 $('.tab_cont').css('display', 'none');
                 $('.tab_cont').eq($(this).index()).css('display', 'flex')
@@ -470,8 +436,7 @@
             });
 
 
-            //매거진 컨텐츠 호버 시 배경이미지 변경 엘리먼트에 따라 클래스명 제어
-            //첫번째 div를 제외한 div한테 마우스 올렸을  때
+            
             $('.vol_list > div').mouseenter(function () {
 
                 $('.magazine_bg div').hide();
@@ -485,18 +450,7 @@
 
 
 
-            //스크립트를 이용하여 이미지 교체
-            // $('.magazine .inner > div').mouseenter(function () {
-
-            //         let num = $(this).index() + 1;
-
-            //         $('.magazine').css({
-            //             'background': 'url(img/thema_bg' + num + '.jpg) center center / cover no-repeat',
-            //             'transition' : 'background 0.7s'
-            //         });
-
-            // });
-
+            
         });//jquery end
     </script>
 </head>
